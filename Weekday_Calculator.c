@@ -21,6 +21,12 @@
     
     
     if(a.year%4==0){
+      if(a.month==4||a.month==6||a.month==9||a.month==11){
+            if(a.day>30){
+                printf("Your input date is invalid");
+                return 0;
+            }
+        }
         if (a.day>31||a.month>12||a.year<0)
         {
           printf("Your input date is invalid");
@@ -43,6 +49,12 @@
     }
     
      if(a.year%4!=0){
+      if(a.month==4||a.month==6||a.month==9||a.month==11){
+            if(a.day>30){
+                printf("Your input date is invalid");
+                return 0;
+            }
+        }
         if(a.month==2&&a.day>28){
             printf("Your input date is invalid");
             return 0;
