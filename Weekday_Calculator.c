@@ -27,19 +27,19 @@
           return 0;
         }
         
-    int p = (a.year/100);
-    if (a.year==p*100)
-    {
-       if (a.year%400!=0)
-       {
-        if(a.month==2&&a.day==29){
-            printf("Your input date is invalid");
-        return 0;
+     int p = (a.year/100);
+     if (a.year==p*100)
+     {
+        if (a.year%400!=0)
+        {
+         if(a.month==2&&a.day==29){
+             printf("Your input date is invalid");
+         return 0;
+         }
+         
         }
         
-       }
-       
-    }
+     }
     }
     
      if(a.year%4!=0){
